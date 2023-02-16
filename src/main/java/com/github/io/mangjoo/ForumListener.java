@@ -20,6 +20,7 @@ public class ForumListener extends ListenerAdapter {
 
     @Override
     public void onChannelCreate(@NotNull ChannelCreateEvent event) {
+
         try {
             if (event.getChannel().asThreadChannel().getParentChannel().asForumChannel()
                     .getIdLong() == studyForumId) {
